@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css v-bucks/style2.css">
+    <link rel="stylesheet" href="./css v-bucks/hidden2.css">
+    <link rel="stylesheet" href="./css v-bucks/v-bucks.css">
+    <title>Zig of Games</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="v-bucks.html">V-bucks</a></li>
+            </ul>
+        </nav>
+        <!-- Botão com imagem -->
+        <button class="image-button" id="toggleButton">
+            <img src="./img/icon.png" alt="Botão de Imagem">
+        </button>
+    </header>
+    <section>
+            <!-- Retângulo de texto escondido -->
+            <div id="rectangle" class="hidden rectangle">
+                <div class="container">
+                    <div class="icon">
+                        <img src="./img/icon.png" alt="Ícone do Usuário">
+                    </div>
+                    <button class="btn"><a href="./login.html">Gerenciar Dados</a></button>
+                    <button class="btn">Sair da Conta</button>
+                    <div class="footer">
+                        <a href="#privacidade">Política de privacidade</a> • 
+                        <a href="#termos">Termos de serviço</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        const button = document.getElementById('toggleButton');
+        const rectangle = document.getElementById('rectangle');
+    
+        button.addEventListener('click', () => {
+          // Alterna entre mostrar e esconder o retângulo
+          if (rectangle.classList.contains('hidden')) {
+            rectangle.classList.remove('hidden');
+          } else {
+            rectangle.classList.add('hidden');
+          }
+        });
+    </script>
+    <section>
+         <!-- Logotipo -->
+  <div class="logo2">
+    <img src="./img/epicgames.png" alt="Epic Games Logo">
+
+
+  <!-- Títulos -->
+  <h1 class="title">COMPRE V-BUCKS</h1>
+  <p class="subtitle">MAIS BARATO SÓ AQUI NA ZIG OF GAMES</p>
+</div>
+  <!-- Produtos -->
+  <div class="products">
+    <!-- Produto 1 -->
+    <div class="product-card">
+      <img src="./img/download (2) 1.png" alt="1.000 v-bucks">
+      <h2>1.000 v-bucks</h2>
+      <p>R$ 25,00</p>
+      <button><a href="compra1.html">compre já</a></button>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="product-card">
+      <img src="./img/download (3) 1.png" alt="2.800 v-bucks">
+      <h2>2.800 v-bucks</h2>
+      <p>R$ 70,00</p>
+      <button><a href="compra2.html">compre já</a></button>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="product-card">
+      <img src="./img/download (1) 1.png" alt="5.000 v-bucks">
+      <h2>5.000 v-bucks</h2>
+      <p>R$ 120,00</p>
+      <button><a href="compra3.html">compre já</a></button>
+    </div>
+  </div>
+    </section>
+</body>
+</html>

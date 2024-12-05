@@ -1,0 +1,78 @@
+.container4-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    width: 700px;
+    height: 300px;
+}
+
+.image-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Ocupará parte proporcional do espaço */
+}
+
+.image-box img {
+    padding-top: 80px;
+    width: 741px;
+    height: 578px;
+    border-radius: 10px;
+}
+
+.info-box {
+    width: 40%;
+    background-color: #22016B;
+    /* Fundo roxo escuro */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Ocupará parte proporcional do espaço */
+}
+
+.info-box h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.info-box p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.buy-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FFFF00;
+    /* Amarelo */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #FFD700;
+    /* Amarelo mais forte */
+}
+
+.epic-logo {
+    position: absolute;
+    padding-top: 80px;
+    top: 20px;
+    left: 30px;
+}
+
+.epic-logo img {
+    width: 50px;
+    width: 100px;
+    height: 130px;
+}

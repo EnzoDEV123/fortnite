@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css index/style.css">
+    <link rel="stylesheet" href="./css index/hidden.css">
+    <link rel="stylesheet" href="./css index/slider.css">
+    <title>Zig of Games</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="./v-bucks.html">V-bucks</a></li>
+            </ul>
+        </nav>
+        <!-- Botão com imagem -->
+        <button class="image-button" id="toggleButton">
+            <img src="./img/icon.png" alt="Botão de Imagem">
+        </button>
+    </header>
+    <section>
+            <!-- Retângulo de texto escondido -->
+            <div id="rectangle" class="hidden rectangle">
+                <div class="container">
+                    <div class="icon">
+                        <img src="./img/icon.png" alt="Ícone do Usuário">
+                    </div>
+                    <button class="btn"><a href="./login.html">Gerenciar Dados</a></button>
+                    <button class="btn">Sair da Conta</button>
+                    <div class="footer">
+                        <a href="#privacidade">Política de privacidade</a> • 
+                        <a href="#termos">Termos de serviço</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="slide-container">
+            <span id="slider-image1"></span>
+            <span id="slider-image2"></span>
+            <span id="slider-image3"></span>
+            <div class="image-container">
+                <img src="./img/slider1.jpg" alt="" class="slider-image">
+                <img src="./img/slider2.jpg" alt="" class="slider-image">
+                <img src="./img/slider3.jpg" alt="" class="slider-image">
+            </div>
+            <div class="button-container">
+                <a href="#slider-image1" class="slider-button"></a>
+                <a href="#slider-image2" class="slider-button"></a>
+                <a href="#slider-image3" class="slider-button"></a>
+            </div>
+        </div>
+    </section>
+    <script>
+    const button = document.getElementById('toggleButton');
+    const rectangle = document.getElementById('rectangle');
+
+    button.addEventListener('click', () => {
+      // Alterna entre mostrar e esconder o retângulo
+      if (rectangle.classList.contains('hidden')) {
+        rectangle.classList.remove('hidden');
+      } else {
+        rectangle.classList.add('hidden');
+      }
+    });
+    </script>
 </body>
 </html>
